@@ -5013,7 +5013,13 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="cdf-y-ppf-de-la-distribución-normal.">CDF y PPF de la Distribución Normal.</h2>
 <p>Ya conociendo que es la distribución Gaussiana lo siguiente que podriamos preguntarnos ¿cómo utilizarla?, para ello, introduciremos <span class="math inline">\(2\)</span> funciones que se definen para todas las distribuciones de probabilidad:</p>
 <p>La primera es la <strong>Función de Distribución Acumulativa (CDF)</strong> la cual se utiliza para calcular la probabilidad correspondiente a un intervalo dado (recordemos que la normal es una distribución continua), dicha función se denota por <span class="math inline">\(F\)</span> y es expresa como sigue:</p>
-<p><span class="math display">\[P(a&lt;X&lt;b)=F(x;a,b)=\int_{a}^{b}f(x)dx=\int_{a}^{b}\frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-1}{2}(\frac{x-\mu}{\sigma})^2}dx.\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+P(a&lt;X&lt;b) &amp;=  F(x;a,b) \\
+         &amp;=  \int_{a}^{b}f(x)dx \\
+         &amp;=  \int_{a}^{b}\frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-1}{2}(\frac{x-\mu}{\sigma})^2}dx.
+\end{align}
+\]</span></p>
 <p>Tristemente, la función <span class="math inline">\(f\)</span> no posee una función antiderivada elemental como tal, asi que deberemos aproximarla, bien por métodos numéricos (a travez de la <em>Función Error de Gauss</em> <span class="math inline">\(\DeclareMathOperator\erf{erf} \erf(x)\)</span> y su expanción en <em>Serie de Taylor</em>) o, de manera más práctica, por medios computacionales. Al ser una integral, la función CDF podra ser interpretada como el área bajo la curva de <span class="math inline">\(f\)</span> y sobre el intervalo <span class="math inline">\((a,b)\)</span>.</p>
 <div id="1644d723-70f2-4757-a1cc-a0d54efbc7e0" class="cell" data-tags="[]" data-execution_count="2">
 <details class="code-fold">
@@ -5176,11 +5182,22 @@ window.Quarto = {
 </div>
 </div>
 <p>Lo siguiente es usar la función CDF <span class="math inline">\(F\)</span> para calcular la probabilidad de cada una. - En el caso del enanismo es un uso directo del CDF:</p>
-<p><span class="math display">\[\text{Probabilidad de que alguien sea enano}=P(X&lt;x_1)=F(x_1).\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+\text{Probabilidad de ser enano}&amp;=P(X&lt;x_1)\\
+                                &amp;=F(x_1).
+\end{align}
+\]</span></p>
 <ul>
 <li>Para el caso del gigantismo podremos calcular su probabilidad de 2 formas distintas, la primera es restandole al área total (que como vimos en las <a href="..\posts/distribuciones-de-probabilidad.html">distribuciones de probabilidad</a> siempre es <span class="math inline">\(1\)</span>) el área por el lado izquierdo de <code>x_2</code> y la segunda implica utiliza el hecho de que curva de la distribución normal es simetrica alrededor de la media, por lo cual, al estar <code>x_1</code> y <code>x_2</code> a la misma distancia de esta tendriamos que:</li>
 </ul>
-<p><span class="math display">\[\text{Probabilidad que alguien sea gigante}=P(x_2&lt;X)=1-F(x_2)=F(x_1).\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+\text{Probabilidad de ser gigante}&amp;=P(x_2&lt;X) \\
+                                  &amp;=1-F(x_2) \\
+                                  &amp;=F(x_1).
+\end{align}
+\]</span></p>
 <p>Para entender esto mejor vease la siguiente gráfica:</p>
 <div id="b8f5a77d-880b-412a-90d7-c54b15b85bed" class="cell" data-tags="[]" data-execution_count="6">
 <details class="code-fold">
