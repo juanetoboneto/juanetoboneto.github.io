@@ -84,123 +84,25 @@
     "text": "Referencias\n\nDevore, Jay L. Probabilidad y estadística para ingeniería y ciencias. Novena edición, Pearson, 2011.\nNield, Thomas.(2020).Essential Math for Data Science. O’Reilly Media."
   },
   {
-    "objectID": "posts/distribuciones-de-probabilidad.html",
-    "href": "posts/distribuciones-de-probabilidad.html",
-    "title": "Fundamentos de las Distribuciones de Probabilidad",
+    "objectID": "posts/introduccion-matematicas-financieras.html",
+    "href": "posts/introduccion-matematicas-financieras.html",
+    "title": "Introducción a las Matemáticas Financieras",
     "section": "",
     "text": "imagen"
   },
   {
-    "objectID": "posts/distribuciones-de-probabilidad.html#distribuciones-discretas-y-continuas.",
-    "href": "posts/distribuciones-de-probabilidad.html#distribuciones-discretas-y-continuas.",
-    "title": "Fundamentos de las Distribuciones de Probabilidad",
-    "section": "Distribuciones Discretas y Continuas.",
-    "text": "Distribuciones Discretas y Continuas.\nEn probabilidad, el espacio muestral será discreto si es un conjunto contable. Esto quiere decir que puedo “listar” los elementos de \\(X\\) y asignarles a cada uno un número natural. La distribución de probabilidad de dichos espacios muestrales debe satisfacer las siguientes condiciones:\n\nLa función de densidad de probabilidad nunca es negativa: \\[ f(x)\\geq 0, \\ \\forall{x\\in{X}}. \\]\nLa suma de todas las probabilidades es \\(1\\) (o sea un \\(100\\%\\)): \\[\\sum_{X} f(x)=1.\\]\nLa probabilidad de que un evento \\(x\\) suceda es igual a la función aplicada en este: \\[P(x=X)=f(x).\\]\n\nSi la función \\(f\\) cumple con estas condiciones, el conjunto de sus imágenes son una Distribución de Probabilidad Discreta. Estas distribuciones se suelen representar gráficamente a través de historigramas o similares.\nPor otro lado, el espacio muestral será continuo si existe una función biyectiva entre este y algún intervalo real (por ejemplo el intervalo \\([0,1]\\subset{\\Re}\\), lo que quiere decir que sus elementos son equivalentes a los puntos de un segmento de una línea.\nSus distribuciones de probabilidad respectivas deben satisfacer las siguientes condiciones:\n\nLa función de densidad de probabilidad nunca es negativa sobre la recta real: \\[f(x) \\geq 0, \\ \\forall{x \\in \\mathbb{R}}.\\]\nLa integral de la función sobre la recta real es \\(1\\): \\[\\int_{-\\infty}^{\\infty} f(x) dx = 1.\\]\nLa probabilidad de un intervalo de eventos es igual a la integral de la función: \\[P(a &lt; x &lt; b) = \\int_{a}^{b} f(x) dx.\\]\n\nNótese que esta última condición implica necesariamente que en un espacio muestral continuo no se puede calcular la probabilidad de un evento \\(x\\) en particular, sino solamente en subintervalos de eventos.\nSi la función \\(f\\) cumple con dichas condiciones, el conjunto de las imágenes \\(f(x)\\) se conocera como Distribución de Probabilidad Continua. Evidentemente, y dada su naturaleza, dichas funciones son del espacio muestral a los reales \\(f:X\\longrightarrow\\Re\\) y se representan gráficamente con curvas sobre el plano cartesiano.\nPuede pensarse que en estadística lo más común es utilizar distribuciones discretas. Sin embargo, muchas veces ocurre que la cantidad de datos es tan grande que resulta más útil trabajar con distribuciones continuas. Además, esto también depende del tipo de datos: si estos se refieren a medidas espaciales o físicas en general, se suelen usar también distribuciones continuas, sin mencionar casos especiales como la Distribución Normal. En resumen, en estadística el tipo de distribución que utilicemos depende más de los propios datos del caso particular y de lo que busquemos hacer.\nNaturalmente, cabe preguntarse: ¿qué pasaría si nuestras probabilidades no dependieran únicamente de una variable, sino más bien de múltiples? La respuesta a esto es bastante simple y la expondré a continuación."
+    "objectID": "posts/introduccion-matematicas-financieras.html#el-valor-del-dinero-en-el-tiempo",
+    "href": "posts/introduccion-matematicas-financieras.html#el-valor-del-dinero-en-el-tiempo",
+    "title": "Introducción a las Matemáticas Financieras",
+    "section": "El Valor del Dinero en el Tiempo",
+    "text": "El Valor del Dinero en el Tiempo\nLlamamos préstamo al acto en el que un ente natural o jurídico, al que llamaremos acreedor (o inversionista), presta o cede un bien de capital a otro ente, al que llamaremos deudor (o emisor). En la gran mayoría de los casos, esto se hace a cambio de que el deudor, además del valor del bien de capital que fue prestado en un principio (cuya devolución dependerá de las condiciones en las que se haya establecido el préstamo), entregue un beneficio extra (normalmente en porcentaje) al del valor del capital inicial y que además de depender de este dependerá también del tiempo. Dicho beneficio se conoce como interés.\nUna pregunta que todos en algún momento de nuestras vidas nos hemos hecho es ¿por qué existen los intereses? La respuesta a esta pregunta tiene que ver con el tema de partida en matemática financiera, que es el valor del dinero en el tiempo. En las finanzas modernas se considera que dentro de una economía de mercado (es decir, en un mercado donde los precios se establecen por la acción libre de la oferta y demanda de bienes y servicios), además de a los bienes o factores de capital, como la base de la riqueza, el tiempo también es crucial. Esto se debe a una serie de razones, de las cuales he decidido revisar las tres más importantes:\n\nLa inflación o pérdida de valor de l dinero en el tiempo: Su efecto más inmediato es la subida generalizada de los precios o la pérdida de poder adquisitivo del dinero.\nEl costo de oportunidad: El capital invertido en préstamos siempre presenta un costo en el sentido de que dicha riqueza podría haber sido invertida en otros activos materiales, humanos o proyectos que no solo podrían proteger de la inflación sino además ser potencialmente más útiles o rentables. Esto último está vinculado al riesgo inherente que corre el prestamista o inversor.\nLa preferencia temporal: Se refiere al aspecto humano que nos hace preferir las utilidades inmediatas a las futuras, querer comprar lo que se puede hoy a lo que se podría conseguir mañana. Para invertir es necesario ahorrar, lo cual siempre implica abstenerse del consumo presente o de las ya mencionadas utilidades inmediatas, siempre buscando aumentar la riqueza a futuro.\n\nEstos tres factores son igualmente importantes. Incluso si la inflación no existiera, el valor del dinero en el futuro es menor al del presente debido al costo de oportunidad vinculado al riesgo y a la preferencia temporal. Hablando de la inflación, cuando se dice que esta disminuye el “valor del dinero”, nos referimos al poder adquisitivo, es decir, a cuántos productos y servicios puedo comprar con una cantidad determinada de dinero. Por ello, no se pierde nada en estudiar cuáles pueden llegar a ser las tres causas lógicas de la inflación. Aquí un pequeño resumen de cada una:\n\nLa inflación por demanda: Ocurre cuando la capacidad monetaria de una población aumenta demasiado y resulta ser excesiva e imposible de cubrir por la oferta de bienes y servicios. El resultado de esto es que los precios suben y se ajustan al aumento de capacidad monetaria en la economía. Una de las muchas causas posibles de este tipo de inflación es el aumento del crédito por parte de los bancos comerciales o la disminución de los tipos de interés por parte del banco central. Ejemplos históricos de esto son los Estados Unidos de la postguerra y China en la última década.\nLa inflación de costos: Sucede cuando la producción vinculada a la oferta se encarece o disminuye. Lo más común es que se produzca cuando se reduce o elimina el acceso a una materia prima o cuando se reduce la mano de obra vinculada a un sector productivo. Un ejemplo anecdótico de lo primero es la crisis del petróleo en Estados Unidos de \\(1973\\) a \\(1974\\) debido al embargo de esta materia prima por parte de la OPEP.\nExpansión monetaria: Esta es la más común y sucede cuando un país expande la emisión de dinero, normalmente como medida para intentar contrarrestar el déficit o pérdida fiscal (el déficit fiscal es la diferencia entre los altos gastos y bajos ingresos del estado). El caso más reconocible para los lectores es la hiperinflación sucedida en Venezuela en el periodo de 2016 a 2022, aunque este periodo sigue en discusión, que se debió a la expansión monetaria del banco central de Venezuela, el BCV.\n\nEstimar la inflación es un proceso que requiere de modelos de análisis de series de tiempo y mediciones poblacionales macroeconómicas, que tal vez toque a futuro. Por ahora, nos basta con saber qué es la inflación y cuáles son sus tipos.\nVolviendo al interés, este se puede entender entonces simplemente como la medida del valor del dinero en el tiempo \\(I\\) resultado de restar el valor del capital inicial (o presente) \\(\\text{P}\\) del capital resultante (o futuro) \\(\\text{F}\\):\n\\[I=\\text{F}-\\text{P}\\]\n\nTasa de Interés\nNormalmente, en vez de tratar con el interés en montos de ganancia fijos para cada caso, lo que se suele hacer es expresarlo en términos de un porcentaje con respecto al valor de la inversión. Dicho porcentaje se conoce como tasa de interés y normalmente se denota con \\(i\\) y es igual a la razón entre la ganancia de los intereses \\(I\\) y la cantidad original invertida \\(\\text{P}\\), es decir:\n\\[i=\\frac{\\text{F}-\\text{P}}{\\text{P}}=\\frac{I}{P}\\]\nNótese que la estructura \\(\\frac{x_1-x_0}{x_0}\\) corresponde a la medición de un cambio relativo, que es sumamente importante en todas las disciplinas prácticas que utilizan modelos matemáticos, por su relación con las derivadas y la medición de los cambios. Probablemente hable de ello en un futuro anexo. De dicha ecuación se puede deducir la fórmula para determinar la renta del interés por medio de su tasa:\n\\[I=\\text{P}\\times i\\]\nTanto el interés como su tasa se estudian con respecto a un periodo de tiempo determinado, lo cual implica que podremos trabajar con el interés por medio de funciones con respecto al tiempo (función de acumulación) como veremos más adelante. Una conclusión importante del estudio del interés es que dos valores diferentes en distintas fechas pueden llegar a considerarse equivalentes. Un valor presente \\(P_0\\) es equivalente a un valor futuro \\(\\text{F}_0\\) si el valor futuro cubre el valor presente más los intereses a la tasa exigida por el inversionista.\nClaro que aún nos queda hablar prácticamente de toda la teoría del interés. En el siguiente artículo en el que trate dicho tema, hablaré de la función de acumulación, el interés simple, compuesto y el valor presente. Con esto abrimos una nueva rama de las aplicaciones de la matemática al mundo real, además de la estadística, la matemática financiera (a pesar de que estas dos estén íntimamente relacionadas). Espero que esto ayude a refrescar no solo a los lectores, sino también a mí. También debo aclarar que elegí este tema (y no métodos de aproximación y medidas para experimentos) por la importancia que tiene en la vida de las personas comunes. Alguien puede vivir de forma relativamente normal sin saber cómo se determina si una medida atípica en un acelerador de partículas prueba un modelo cuántico o es solo una casualidad. Pero no va a ser responsable en sus finanzas y en su vida si no sabe cómo funcionan los intereses o el cómo y por qué de la inflación. Estamos viviendo un fenómeno en el cual la educación matemática y financiera está siendo cada vez menor entre la población, como muestran las pruebas PISA, y si puedo aportar mi granito de arena para prevenir esa situación, lo haré con gusto."
   },
   {
-    "objectID": "posts/distribuciones-de-probabilidad.html#distribuciones-de-probabilidad-multivariada.",
-    "href": "posts/distribuciones-de-probabilidad.html#distribuciones-de-probabilidad-multivariada.",
-    "title": "Fundamentos de las Distribuciones de Probabilidad",
-    "section": "Distribuciones de Probabilidad Multivariada.",
-    "text": "Distribuciones de Probabilidad Multivariada.\nAhora, en vez de tener únicamente un espacio muestral \\(X\\), supondremos que existen \\(n\\) espacios muestrales, a los cuales denotaremos como \\(X_1, X_2, ..., X_1\\). En ese caso, la distinción entre distribuciones discretas y continuas se mantendrá, y realmente lo único que cambiará serán las condiciones necesarias que deben satisfacer ambos tipos de distribución.\nPara las distribuciones de probabilidad multivariada la función PDF será una función multivariada del producto cartesiano de los múltiples espacios muestrales al intervalo de \\(0\\) a \\(1\\), es decir, \\(f: X_1\\times X_2\\times ...\\times X_n \\longrightarrow (0,1)\\).\nEn el caso de ser todos los \\(X_k\\) discretos se deberan cumplir las siguientes condiciones:\n\nLa función de densidad debe seguir siendo no negativa:\n\n\\[f(x_1,x_2,...,x_n)\\geq 0;\\]\n\\[\\forall{(x_1,x_2,...,x_n)}\\in{X_1\\times X_2\\times ... \\times X_n}.\\]\n\nLógicamente, la suma de todas las probabilidades debe ser igual a \\(1\\):\n\n\\[\\sum_{X_1}\\sum_{X_2}...\\sum_{X_n} f(x_1,x_2,x_3,...,x_n)=1.\\]\n\nComo mencionamos antes, la probabilidad específica dependera de cada una de los valores de las variables: \\[P(X_1=x_1,X_2=x_2,...,X_n=x_n)=\\] \\[f(x_1,x_2,...,x_n).\\]\n\nY en el caso de las Distribuciones de ser continuas, las condiciones serán las siguentes:\n\nLa función de densidad debe yacer o estar por encima del hiperplano nulo:\n\n\\[f(x_1,x_2,...,x_n)\\geq 0;\\]\n\\[\\forall{(x_1,x_2,...,x_n)}\\in{\\Re^n}.\\]\n\nLa integral múltiple de la función evaluada en todo el espacio muestral es \\(1\\):\n\n\\[\\int_{-\\infty}^{\\infty}...\\int_{-\\infty}^{\\infty}f(x_1,...,x_n)dx_1 ...dx_n.\\]\n\nLa probabilidad solo se obtendra de un subconjunto del producto cartesiano de los espacios muestrales:\n\n\\[P[(x_1,x_2,...,x_n)\\in{A}]=\\] \\[\\idotsint_{A} f(x_1,x_2,...,x_n) dx_1dx_2...dx_n;\\] \\[\\forall{A}\\subset{X_1\\times X_2\\times ... \\times X_n}.\\]\nComo se puede observar, a diferencia de las funciones de densidad de probabilidad univariadas, en vez de trabajar sobre rectas o planos cartesianos, en las distribuciones multivariadas tratamos con subespacios de \\(\\Re^n\\).\nTambién se puede notar que el cálculo de estas funciones de probabilidad utiliza sumatorias o integrales múltiples en cada caso, con lo cual deberemos implementar funciones algo distintas (vectoriales) en vez de las más comunes funciones reales. De nuevo, esto dependerá de las variables presentes en nuestros datos, cómo se relacionan entre ellas y qué información queramos obtener de los mismos.\nPor ahora, trabajaremos solamente con funciones de densidad de probabilidad univariadas, más específicamente con la distribución de probabilidad normal. Esto lo haremos por una serie de razones que trataré en un futuro artículo. Además, en los últimos artículos no he agregado ejemplos porque hasta ahora solo he definido conceptos. Cuando hablemos de la distribución normal, podré agregar más ejemplos para que estos conceptos se entiendan mejor."
-  },
-  {
-    "objectID": "posts/distribuciones-de-probabilidad.html#referencias.",
-    "href": "posts/distribuciones-de-probabilidad.html#referencias.",
-    "title": "Fundamentos de las Distribuciones de Probabilidad",
-    "section": "Referencias.",
-    "text": "Referencias.\n\nDevore, Jay L. Probabilidad y estadística para ingeniería y ciencias. Novena edición, Pearson, 2011."
-  },
-  {
-    "objectID": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html",
-    "href": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html",
-    "title": "Conceptos Básicos de las Pruebas de Hipótesis.",
-    "section": "",
-    "text": "imagen"
-  },
-  {
-    "objectID": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html#referencias.",
-    "href": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html#referencias.",
-    "title": "Conceptos Básicos de las Pruebas de Hipótesis.",
-    "section": "Referencias.",
-    "text": "Referencias.\n\nJ.Kazmier, Leonard.(1998).Estadística Aplicada a la Administración y a la Economía.McGRAW-HILL.\nNield, Thomas.(2020).Essential Math for Data Science.O’Reilly Media."
-  },
-  {
-    "objectID": "blogs.html",
-    "href": "blogs.html",
-    "title": "Lista de Artículos",
-    "section": "",
-    "text": "Aquí encontraras todos los artículos relacionados con estadística y ciencia de datos que se han publicado en este blog hasta la fecha.\n\n\n\nConceptos Básicos de las Pruebas de Hipótesis\n\n\nExplora los fundamentos de las pruebas de hipótesis en estadística, la formulación de hipótesis nula y alternativa hasta la comprensión de la significancia estadística y los errores de tipo I y II… Leer más\n\n\n\n\n\nFundamentos de las Distribuciones de Probabilidad\n\n\nCubre variables aleatorias, espacios muestrales, distribuciones discretas y continuas, y distribuciones de probabilidad multivariadas. El artículo destaca las condiciones clave para cada tipo de distribución y su aplicación en el análisis estadístico… Leer más\n\n\n\n\n\nLa Distribución Normal o Gaussiana\n\n\nEn este artículo, exploramos la distribución normal, desde su función de distribución acumulada (CDF) hasta la función de punto de probabilidad (PPF). Además, examinamos el teorema central del límite (TCL), revelando su amplio impacto en diversos campos. Este análisis resalta la omnipresencia y la importancia de la distribución normal en estadística y probabilidad… Leer más\n\n\n\n\n\nTipos de Pruebas de Hipótesis:\n\n\nEn este artículo, hablo sobre los métodos para realizar pruebas de hipótesis relativas a la media poblacional para datos que siguen una distribución normal. Los tres métodos más comunes son: valores críticos, el valor \\(p\\), los intervalos de confianza y su versión normalizada…. Leer más\n\n\n\n\n\nOtros Conceptos de las Pruebas de Hipótesis I:\n\n\nEn este artículo complementario, explico otras formas de formular las hipótesis, la unidad tipificada o valores \\(z\\), y cómo y en qué condiciones se puede calcular la probabilidad de los errores de tipo I y II en dichas pruebas…. Leer más"
-  },
-  {
-    "objectID": "annexes/anexo-varianza-y-media-normal.html",
-    "href": "annexes/anexo-varianza-y-media-normal.html",
-    "title": "Anexo: Demostración de la Media y Varianza Normal",
-    "section": "",
-    "text": "Para ambas demostraciones necesitaremos el hecho de que la distribucion normal es una distribución de probabilidad continua, por lo que la función de densidad de probabilidad (PDF) de la distribución normal (denotada por \\(f(x;\\mu,\\sigma)\\)) debe satisfacer la condición dos de dichas distribuciones y por tanto se cumple la siguiente fórmula:\n\\[1=\\int_{-\\infty}^{+\\infty}f(x;0,1)dx=\\frac{1}{\\sqrt{2\\pi}}\\int_{-\\infty}^{+\\infty}e^{-\\frac{x^2}{2}}dx\\]\n\\[\n\\Rightarrow \\int_{-\\infty}^{+\\infty} e^{-\\frac{x^2}{2}}dx=\\sqrt{2\\pi}.  \\ (1)\n\\]\nTeniendo encuenta lo anterior, podemos empezar."
-  },
-  {
-    "objectID": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-media-normal",
-    "href": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-media-normal",
-    "title": "Anexo: Demostración de la Media y Varianza Normal",
-    "section": "Demostración de la Media Normal:",
-    "text": "Demostración de la Media Normal:\nProbemos que \\(\\mu_0\\) es la media de la distribución normal. Sabemos que para toda distribución de probabilidad continua la media se define como\n\\[\\mu=E(x)=\\int_{-\\infty}^{+\\infty}xf(x)dx\\]\nPara evitar confuciones diremos que\n\\[f(x;\\mu_0,\\sigma)=\\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu_0}{\\sigma}) ^2}dx\\]\nPor lo que bastara con probar que \\(\\mu_0=E(x)\\), como sigue:\n\\[\n\\begin{align}\nE(x) &= \\int_{-\\infty}^{+\\infty}xf(x;\\mu_0,\\sigma)dx\n     &= \\int_{-\\infty}^{+\\infty}\\frac{x}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu_0}{\\sigma})^2}dx\n\\end{align}\n\\]\nAhora realizamos la sustitución \\(z=\\frac{x-\\mu_0}{\\sigma}\\) (normalización por medio del \\(z\\)-valor) lo cual implica que \\(\\sigma dz=dx\\), resultando en que\n\\[\nE(x) = \\int_{-\\infty}^{+\\infty}\\frac{(\\sigma z+\\mu_0)}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{z^2}{2}}(\\sigma)dz\n\\]\n\\[\n     = \\frac{1}{\\sqrt{2\\pi}}[\\sigma\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz+\\mu_0\\int_{-\\infty}^{+\\infty}e^{-\\frac{z^2}{2}}dz]\n\\]\nPor la fórmula \\((1)\\) obtendremos lo siguiente\n\\[E(x)=\\frac{1}{\\sqrt{2\\pi}}[\\sigma\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz+\\mu_0(\\sqrt{2\\pi})]\\]\nPodemos solucionar esa última integral por medio de una nueva sustitución, donde \\(u=-\\frac{z^2}{2}\\) y por tanto \\(-du=zdz\\), de esta forma\n\\[\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz = \\]\n\\[-\\int_{+\\infty}^{-\\infty}e^udu = \\]\n\\[\\int_{-\\infty}^{+\\infty}e^udu = \\]\n\\[\\lim_{z\\to-\\infty}e^{-\\frac{z^2}{2}}-\\lim_{z\\to+\\infty}e^{-\\frac{z^2}{2}} = \\]\n\\[\\lim_{z\\to-\\infty}\\frac{1}{e^{\\frac{z^2}{2}}}-\\lim_{z\\to+\\infty}\\frac{1}{e^{\\frac{z^2}{2}}} = 0.\\]\n\\[\\Rightarrow\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz = 0. \\ (2)\\]\nPor lo cual obtendremos finalmente el resultado deseado\n\\[\nE(x)=\\frac{1}{\\sqrt{2\\pi}}[\\sigma(0)+\\mu_0(\\sqrt{2\\pi})]=\\mu_0.\n\\]\nQ.E.D."
-  },
-  {
-    "objectID": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-varianza-normal",
-    "href": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-varianza-normal",
-    "title": "Anexo: Demostración de la Media y Varianza Normal",
-    "section": "Demostración de la Varianza Normal",
-    "text": "Demostración de la Varianza Normal\nAhora probemos que \\(\\sigma_{0}^{2}\\) es la varianza de la distribución normal. Sabemos que para toda distribución de probabilidad continua la varianza se define como\n\\[\\sigma^2=E[(x-\\mu)^2]=\\int_{-\\infty}^{+\\infty}(x-\\mu)^2f(x)dx\\]\nPara evitar confuciones diremos que\n\\[f(x;\\mu,\\sigma_0)=\\frac{1}{\\sigma_0\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu}{\\sigma_0})^2}\\]\nPor lo que bastara con probar que \\(E[(x-\\mu)^2]=\\sigma_{0}^{2}\\), como se hace acontinuación\n\\[\nE[(x-\\mu)^2] = \\int_{-\\infty}^{+\\infty}(x-\\mu)^2f(x;\\mu,\\sigma_0)dx\n\\]\n\\[\n             = \\int_{-\\infty}^{+\\infty}\\frac{(x-\\mu)^2}{\\sigma_0\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu}{\\sigma_0})^2}dx\n\\]\nDe nuevo, sustituyendo por la normalización \\(z=\\frac{x-\\mu}{\\sigma_0}\\) en donde \\(\\sigma_0dz=dx\\), obtendremos\n\\[\n\\begin{align}\nE[(x-\\mu)^2] &= \\int_{-\\infty}^{+\\infty}\\frac{(\\sigma_0z)^2}{\\sigma_0\\sqrt{2\\pi}}e^{-\\frac{z^2}{2}}\\sigma_0dz\n               &= \\frac{\\sigma_{0}^{2}}{\\sqrt{2\\pi}}\\int_{-\\infty}^{+\\infty}z^2e^{-\\frac{z^2}{2}}dz\n\\end{align}\n\\]\nUtilizando el método de sustitución por partes, donde tomamos \\(u=z\\) y \\(dv=ze^{-\\frac{z^2}{2}}\\) tendremos la siguiente igualdad\n\\[E[(x-\\mu)^2]=\\frac{\\sigma_{0}^{2}}{\\sqrt{2\\pi}}[-\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz+\\int_{-\\infty}^{+\\infty}e^{-\\frac{z^2}{2}}dz]\\]\nY finalmente, debido a las igualdades \\((1)\\) y \\((2)\\) tendremos que\n\\[\nE[(x-\\mu)^2]=\\frac{\\sigma_{0}^{2}}{\\sqrt{2\\pi}}(0+\\sqrt{2\\pi})=\\sigma_{0}^{2}.\n\\]\nPor lo que queda probado."
-  },
-  {
-    "objectID": "about_me.html",
-    "href": "about_me.html",
-    "title": "Sobre el Autor",
-    "section": "",
-    "text": "Soy un matemático apasionado y altamente motivado con una sólida formación académica. Me considero una persona responsable y estoy dispuesto a utilizar mis conocimientos en matemáticas, así como distintas herramientas de software, para adaptarme y cumplir diferentes objetivos de trabajo. Además, poseo un conjunto de habilidades técnicas y teóricas robustas que me respaldan para abordar desafíos analíticos complejos mediante el uso de programas informáticos.\n\n\n\n\n\nCel. (+57) 3204940335\nEmail. juaneschavez31@gmail.com"
-  },
-  {
-    "objectID": "about_me.html#contactame",
-    "href": "about_me.html#contactame",
-    "title": "Sobre el Autor",
-    "section": "",
-    "text": "Cel. (+57) 3204940335\nEmail. juaneschavez31@gmail.com"
-  },
-  {
-    "objectID": "annexes.html",
-    "href": "annexes.html",
-    "title": "Lista de Anexos",
-    "section": "",
-    "text": "En esta sección encontrarán contenido adicional a los proyectos y artículos. Estos no están pensados para introducir o explicar un tema en particular, ni para desarrollar un trabajo. Están menos pulidos que las demás secciones y están destinados a aquellos que ya tienen conocimientos en matemáticas y están interesados en demostraciones y otros temas algo más técnicos.\n\n\nAnexo: Demostración de la Muestra y Varianza Normal\n\n\nDemostración de la media y la varianza de la distribución normal son los respectivos parámetros, a partir de la sus definiciones dadas por la esperanza matemática. Ver anexo"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "¡Bienvenido a Estadística en Acción!",
-    "section": "",
-    "text": "Este es un blog personal dedicado a quienes deseen explorar las numerosas aplicaciones de la matemática, la estadística y la ciencia de datos. A través de esta página, publicaré artículos relacionados con estos temas y también compartiré algunos de mis proyectos personales.\nBasado fundamentalmente en Jupyter Lab, en este espacio no solo expondré temas, métodos y modelos teóricos con ejemplos, sino que también mostraré implementaciones computacionales principalmente en R, MariaDB y Python.\nEspero les guste."
-  },
-  {
-    "objectID": "index.html#artículo-más-reciente",
-    "href": "index.html#artículo-más-reciente",
-    "title": "¡Bienvenido a Estadística en Acción!",
-    "section": "Artículo más Reciente",
-    "text": "Artículo más Reciente\n\n\n\nOtros Conceptos de las Pruebas de Hipótesis I:\n\n\nEn este artículo complementario, explico otras formas de formular las hipótesis, la unidad tipificada o valores \\(z\\), y cómo y en qué condiciones se puede calcular la probabilidad de los errores de tipo I y II en dichas pruebas…. Leer más"
-  },
-  {
-    "objectID": "index.html#proyecto-más-reciente",
-    "href": "index.html#proyecto-más-reciente",
-    "title": "¡Bienvenido a Estadística en Acción!",
-    "section": "Proyecto más Reciente:",
-    "text": "Proyecto más Reciente:\n\n\n\nBase de Datos Relacionales con SQLite3:\n\n\nSe presenta un ejemplo de base de datos relacionales simple para una red social ficticia, que incluye usuarios, seguidores, publicaciones y likes. Se construyó utilizando Python y SQL, este último implementado a través del módulo sqlite3. Haz click aquí para ver el proyecto"
-  },
-  {
-    "objectID": "index.html#lista-de-anexos",
-    "href": "index.html#lista-de-anexos",
-    "title": "¡Bienvenido a Estadística en Acción!",
-    "section": "Lista de Anexos:",
-    "text": "Lista de Anexos:\n\n\nAnexo: Demostración de la Muestra y Varianza Normal\n\n\nDemostración de la media y la varianza de la distribución normal son los respectivos parámetros, a partir de la sus definiciones dadas por la esperanza matemática. Ver anexo"
+    "objectID": "posts/introduccion-matematicas-financieras.html#referencias",
+    "href": "posts/introduccion-matematicas-financieras.html#referencias",
+    "title": "Introducción a las Matemáticas Financieras",
+    "section": "Referencias",
+    "text": "Referencias\n\nKozikowski Zarska, Z. (2007). Matemáticas financieras: El valor del dinero en el tiempo. McGraw-Hill.\nMeza Orozco, Juan de Jesús (2011). Matemáticas financieras aplicadas: Uso de las calculadoras financieras y Excel (4ta Ed.). ECOE Ediciones."
   },
   {
     "objectID": "posts/distribucion-normal.html",
@@ -236,6 +138,125 @@
     "title": "La Distribución Normal",
     "section": "Referencias.",
     "text": "Referencias.\n\nDevore, Jay L. Probabilidad y estadística para ingeniería y ciencias. Novena edición, Pearson, 2011.\nJ.Kazmier, Leonard.(1998).Estadística Aplicada a la Administración y a la Economía.McGRAW-HILL.\nWalpole, R. E., & Myers, R. H. (1992). Probabilidad y Estadística (4ª ed.). McGraw-Hill.\nNield, Thomas.(2020).Essential Math for Data Science. O’Reilly Media."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "¡Bienvenido a Estadística en Acción!",
+    "section": "",
+    "text": "Este es un blog personal dedicado a quienes deseen explorar las numerosas aplicaciones de la matemática, la estadística y la ciencia de datos. A través de esta página, publicaré artículos relacionados con estos temas y también compartiré algunos de mis proyectos personales.\nBasado fundamentalmente en Jupyter Lab, en este espacio no solo expondré temas, métodos y modelos teóricos con ejemplos, sino que también mostraré implementaciones computacionales principalmente en R, MariaDB y Python.\nEspero les guste."
+  },
+  {
+    "objectID": "index.html#artículo-más-reciente",
+    "href": "index.html#artículo-más-reciente",
+    "title": "¡Bienvenido a Estadística en Acción!",
+    "section": "Artículo más Reciente",
+    "text": "Artículo más Reciente\n\n\n\nIntroducción a las Matemáticas Financieras:\n\n\nEl artículo explica la importancia de las matemáticas financieras en la asignación de recursos, se centra en el valor del dinero en el tiempo. Introduce el concepto de interés y sus causas, incluyendo la inflación, el costo de oportunidad y la preferencia temporal, y presenta la tasa de interés y su cálculo….. Leer más"
+  },
+  {
+    "objectID": "index.html#proyecto-más-reciente",
+    "href": "index.html#proyecto-más-reciente",
+    "title": "¡Bienvenido a Estadística en Acción!",
+    "section": "Proyecto más Reciente:",
+    "text": "Proyecto más Reciente:\n\n\n\nBase de Datos Relacionales con SQLite3:\n\n\nSe presenta un ejemplo de base de datos relacionales simple para una red social ficticia, que incluye usuarios, seguidores, publicaciones y likes. Se construyó utilizando Python y SQL, este último implementado a través del módulo sqlite3. Haz click aquí para ver el proyecto"
+  },
+  {
+    "objectID": "index.html#lista-de-anexos",
+    "href": "index.html#lista-de-anexos",
+    "title": "¡Bienvenido a Estadística en Acción!",
+    "section": "Lista de Anexos:",
+    "text": "Lista de Anexos:\n\n\nAnexo: Demostración de la Muestra y Varianza Normal\n\n\nDemostración de la media y la varianza de la distribución normal son los respectivos parámetros, a partir de la sus definiciones dadas por la esperanza matemática. Ver anexo"
+  },
+  {
+    "objectID": "annexes.html",
+    "href": "annexes.html",
+    "title": "Lista de Anexos",
+    "section": "",
+    "text": "En esta sección encontrarán contenido adicional a los proyectos y artículos. Estos no están pensados para introducir o explicar un tema en particular, ni para desarrollar un trabajo. Están menos pulidos que las demás secciones y están destinados a aquellos que ya tienen conocimientos en matemáticas y están interesados en demostraciones y otros temas algo más técnicos.\n\n\nAnexo: Demostración de la Muestra y Varianza Normal\n\n\nDemostración de la media y la varianza de la distribución normal son los respectivos parámetros, a partir de la sus definiciones dadas por la esperanza matemática. Ver anexo"
+  },
+  {
+    "objectID": "about_me.html",
+    "href": "about_me.html",
+    "title": "Sobre el Autor",
+    "section": "",
+    "text": "Soy un matemático apasionado y altamente motivado con una sólida formación académica. Me considero una persona responsable y estoy dispuesto a utilizar mis conocimientos en matemáticas, así como distintas herramientas de software, para adaptarme y cumplir diferentes objetivos de trabajo. Además, poseo un conjunto de habilidades técnicas y teóricas robustas que me respaldan para abordar desafíos analíticos complejos mediante el uso de programas informáticos.\n\n\n\n\n\nCel. (+57) 3204940335\nEmail. juaneschavez31@gmail.com"
+  },
+  {
+    "objectID": "about_me.html#contactame",
+    "href": "about_me.html#contactame",
+    "title": "Sobre el Autor",
+    "section": "",
+    "text": "Cel. (+57) 3204940335\nEmail. juaneschavez31@gmail.com"
+  },
+  {
+    "objectID": "annexes/anexo-varianza-y-media-normal.html",
+    "href": "annexes/anexo-varianza-y-media-normal.html",
+    "title": "Anexo: Demostración de la Media y Varianza Normal",
+    "section": "",
+    "text": "Para ambas demostraciones necesitaremos el hecho de que la distribucion normal es una distribución de probabilidad continua, por lo que la función de densidad de probabilidad (PDF) de la distribución normal (denotada por \\(f(x;\\mu,\\sigma)\\)) debe satisfacer la condición dos de dichas distribuciones y por tanto se cumple la siguiente fórmula:\n\\[1=\\int_{-\\infty}^{+\\infty}f(x;0,1)dx=\\frac{1}{\\sqrt{2\\pi}}\\int_{-\\infty}^{+\\infty}e^{-\\frac{x^2}{2}}dx\\]\n\\[\n\\Rightarrow \\int_{-\\infty}^{+\\infty} e^{-\\frac{x^2}{2}}dx=\\sqrt{2\\pi}.  \\ (1)\n\\]\nTeniendo encuenta lo anterior, podemos empezar."
+  },
+  {
+    "objectID": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-media-normal",
+    "href": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-media-normal",
+    "title": "Anexo: Demostración de la Media y Varianza Normal",
+    "section": "Demostración de la Media Normal:",
+    "text": "Demostración de la Media Normal:\nProbemos que \\(\\mu_0\\) es la media de la distribución normal. Sabemos que para toda distribución de probabilidad continua la media se define como\n\\[\\mu=E(x)=\\int_{-\\infty}^{+\\infty}xf(x)dx\\]\nPara evitar confuciones diremos que\n\\[f(x;\\mu_0,\\sigma)=\\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu_0}{\\sigma}) ^2}dx\\]\nPor lo que bastara con probar que \\(\\mu_0=E(x)\\), como sigue:\n\\[\n\\begin{align}\nE(x) &= \\int_{-\\infty}^{+\\infty}xf(x;\\mu_0,\\sigma)dx\n     &= \\int_{-\\infty}^{+\\infty}\\frac{x}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu_0}{\\sigma})^2}dx\n\\end{align}\n\\]\nAhora realizamos la sustitución \\(z=\\frac{x-\\mu_0}{\\sigma}\\) (normalización por medio del \\(z\\)-valor) lo cual implica que \\(\\sigma dz=dx\\), resultando en que\n\\[\nE(x) = \\int_{-\\infty}^{+\\infty}\\frac{(\\sigma z+\\mu_0)}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{z^2}{2}}(\\sigma)dz\n\\]\n\\[\n     = \\frac{1}{\\sqrt{2\\pi}}[\\sigma\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz+\\mu_0\\int_{-\\infty}^{+\\infty}e^{-\\frac{z^2}{2}}dz]\n\\]\nPor la fórmula \\((1)\\) obtendremos lo siguiente\n\\[E(x)=\\frac{1}{\\sqrt{2\\pi}}[\\sigma\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz+\\mu_0(\\sqrt{2\\pi})]\\]\nPodemos solucionar esa última integral por medio de una nueva sustitución, donde \\(u=-\\frac{z^2}{2}\\) y por tanto \\(-du=zdz\\), de esta forma\n\\[\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz = \\]\n\\[-\\int_{+\\infty}^{-\\infty}e^udu = \\]\n\\[\\int_{-\\infty}^{+\\infty}e^udu = \\]\n\\[\\lim_{z\\to-\\infty}e^{-\\frac{z^2}{2}}-\\lim_{z\\to+\\infty}e^{-\\frac{z^2}{2}} = \\]\n\\[\\lim_{z\\to-\\infty}\\frac{1}{e^{\\frac{z^2}{2}}}-\\lim_{z\\to+\\infty}\\frac{1}{e^{\\frac{z^2}{2}}} = 0.\\]\n\\[\\Rightarrow\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz = 0. \\ (2)\\]\nPor lo cual obtendremos finalmente el resultado deseado\n\\[\nE(x)=\\frac{1}{\\sqrt{2\\pi}}[\\sigma(0)+\\mu_0(\\sqrt{2\\pi})]=\\mu_0.\n\\]\nQ.E.D."
+  },
+  {
+    "objectID": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-varianza-normal",
+    "href": "annexes/anexo-varianza-y-media-normal.html#demostración-de-la-varianza-normal",
+    "title": "Anexo: Demostración de la Media y Varianza Normal",
+    "section": "Demostración de la Varianza Normal",
+    "text": "Demostración de la Varianza Normal\nAhora probemos que \\(\\sigma_{0}^{2}\\) es la varianza de la distribución normal. Sabemos que para toda distribución de probabilidad continua la varianza se define como\n\\[\\sigma^2=E[(x-\\mu)^2]=\\int_{-\\infty}^{+\\infty}(x-\\mu)^2f(x)dx\\]\nPara evitar confuciones diremos que\n\\[f(x;\\mu,\\sigma_0)=\\frac{1}{\\sigma_0\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu}{\\sigma_0})^2}\\]\nPor lo que bastara con probar que \\(E[(x-\\mu)^2]=\\sigma_{0}^{2}\\), como se hace acontinuación\n\\[\nE[(x-\\mu)^2] = \\int_{-\\infty}^{+\\infty}(x-\\mu)^2f(x;\\mu,\\sigma_0)dx\n\\]\n\\[\n             = \\int_{-\\infty}^{+\\infty}\\frac{(x-\\mu)^2}{\\sigma_0\\sqrt{2\\pi}}e^{-\\frac{1}{2}(\\frac{x-\\mu}{\\sigma_0})^2}dx\n\\]\nDe nuevo, sustituyendo por la normalización \\(z=\\frac{x-\\mu}{\\sigma_0}\\) en donde \\(\\sigma_0dz=dx\\), obtendremos\n\\[\n\\begin{align}\nE[(x-\\mu)^2] &= \\int_{-\\infty}^{+\\infty}\\frac{(\\sigma_0z)^2}{\\sigma_0\\sqrt{2\\pi}}e^{-\\frac{z^2}{2}}\\sigma_0dz\n               &= \\frac{\\sigma_{0}^{2}}{\\sqrt{2\\pi}}\\int_{-\\infty}^{+\\infty}z^2e^{-\\frac{z^2}{2}}dz\n\\end{align}\n\\]\nUtilizando el método de sustitución por partes, donde tomamos \\(u=z\\) y \\(dv=ze^{-\\frac{z^2}{2}}\\) tendremos la siguiente igualdad\n\\[E[(x-\\mu)^2]=\\frac{\\sigma_{0}^{2}}{\\sqrt{2\\pi}}[-\\int_{-\\infty}^{+\\infty}ze^{-\\frac{z^2}{2}}dz+\\int_{-\\infty}^{+\\infty}e^{-\\frac{z^2}{2}}dz]\\]\nY finalmente, debido a las igualdades \\((1)\\) y \\((2)\\) tendremos que\n\\[\nE[(x-\\mu)^2]=\\frac{\\sigma_{0}^{2}}{\\sqrt{2\\pi}}(0+\\sqrt{2\\pi})=\\sigma_{0}^{2}.\n\\]\nPor lo que queda probado."
+  },
+  {
+    "objectID": "blogs.html",
+    "href": "blogs.html",
+    "title": "Lista de Artículos",
+    "section": "",
+    "text": "Aquí encontraras todos los artículos relacionados con estadística y ciencia de datos que se han publicado en este blog hasta la fecha.\n\n\n\nConceptos Básicos de las Pruebas de Hipótesis\n\n\nExplora los fundamentos de las pruebas de hipótesis en estadística, la formulación de hipótesis nula y alternativa hasta la comprensión de la significancia estadística y los errores de tipo I y II… Leer más\n\n\n\n\n\nFundamentos de las Distribuciones de Probabilidad\n\n\nCubre variables aleatorias, espacios muestrales, distribuciones discretas y continuas, y distribuciones de probabilidad multivariadas. El artículo destaca las condiciones clave para cada tipo de distribución y su aplicación en el análisis estadístico… Leer más\n\n\n\n\n\nLa Distribución Normal o Gaussiana\n\n\nEn este artículo, exploramos la distribución normal, desde su función de distribución acumulada (CDF) hasta la función de punto de probabilidad (PPF). Además, examinamos el teorema central del límite (TCL), revelando su amplio impacto en diversos campos. Este análisis resalta la omnipresencia y la importancia de la distribución normal en estadística y probabilidad… Leer más\n\n\n\n\n\nTipos de Pruebas de Hipótesis:\n\n\nEn este artículo, hablo sobre los métodos para realizar pruebas de hipótesis relativas a la media poblacional para datos que siguen una distribución normal. Los tres métodos más comunes son: valores críticos, el valor \\(p\\), los intervalos de confianza y su versión normalizada…. Leer más\n\n\n\n\n\nOtros Conceptos de las Pruebas de Hipótesis I:\n\n\nEn este artículo complementario, explico otras formas de formular las hipótesis, la unidad tipificada o valores \\(z\\), y cómo y en qué condiciones se puede calcular la probabilidad de los errores de tipo I y II en dichas pruebas…. Leer más\n\n\n\n\n\nIntroducción a las Matemáticas Financieras:\n\n\nEl artículo explica la importancia de las matemáticas financieras en la asignación de recursos, se centra en el valor del dinero en el tiempo. Introduce el concepto de interés y sus causas, incluyendo la inflación, el costo de oportunidad y la preferencia temporal, y presenta la tasa de interés y su cálculo….. Leer más"
+  },
+  {
+    "objectID": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html",
+    "href": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html",
+    "title": "Conceptos Básicos de las Pruebas de Hipótesis.",
+    "section": "",
+    "text": "imagen"
+  },
+  {
+    "objectID": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html#referencias.",
+    "href": "posts/conceptos-basicos-para-las-pruebas-de-hipotesis.html#referencias.",
+    "title": "Conceptos Básicos de las Pruebas de Hipótesis.",
+    "section": "Referencias.",
+    "text": "Referencias.\n\nJ.Kazmier, Leonard.(1998).Estadística Aplicada a la Administración y a la Economía.McGRAW-HILL.\nNield, Thomas.(2020).Essential Math for Data Science.O’Reilly Media."
+  },
+  {
+    "objectID": "posts/distribuciones-de-probabilidad.html",
+    "href": "posts/distribuciones-de-probabilidad.html",
+    "title": "Fundamentos de las Distribuciones de Probabilidad",
+    "section": "",
+    "text": "imagen"
+  },
+  {
+    "objectID": "posts/distribuciones-de-probabilidad.html#distribuciones-discretas-y-continuas.",
+    "href": "posts/distribuciones-de-probabilidad.html#distribuciones-discretas-y-continuas.",
+    "title": "Fundamentos de las Distribuciones de Probabilidad",
+    "section": "Distribuciones Discretas y Continuas.",
+    "text": "Distribuciones Discretas y Continuas.\nEn probabilidad, el espacio muestral será discreto si es un conjunto contable. Esto quiere decir que puedo “listar” los elementos de \\(X\\) y asignarles a cada uno un número natural. La distribución de probabilidad de dichos espacios muestrales debe satisfacer las siguientes condiciones:\n\nLa función de densidad de probabilidad nunca es negativa: \\[ f(x)\\geq 0, \\ \\forall{x\\in{X}}. \\]\nLa suma de todas las probabilidades es \\(1\\) (o sea un \\(100\\%\\)): \\[\\sum_{X} f(x)=1.\\]\nLa probabilidad de que un evento \\(x\\) suceda es igual a la función aplicada en este: \\[P(x=X)=f(x).\\]\n\nSi la función \\(f\\) cumple con estas condiciones, el conjunto de sus imágenes son una Distribución de Probabilidad Discreta. Estas distribuciones se suelen representar gráficamente a través de historigramas o similares.\nPor otro lado, el espacio muestral será continuo si existe una función biyectiva entre este y algún intervalo real (por ejemplo el intervalo \\([0,1]\\subset{\\Re}\\), lo que quiere decir que sus elementos son equivalentes a los puntos de un segmento de una línea.\nSus distribuciones de probabilidad respectivas deben satisfacer las siguientes condiciones:\n\nLa función de densidad de probabilidad nunca es negativa sobre la recta real: \\[f(x) \\geq 0, \\ \\forall{x \\in \\mathbb{R}}.\\]\nLa integral de la función sobre la recta real es \\(1\\): \\[\\int_{-\\infty}^{\\infty} f(x) dx = 1.\\]\nLa probabilidad de un intervalo de eventos es igual a la integral de la función: \\[P(a &lt; x &lt; b) = \\int_{a}^{b} f(x) dx.\\]\n\nNótese que esta última condición implica necesariamente que en un espacio muestral continuo no se puede calcular la probabilidad de un evento \\(x\\) en particular, sino solamente en subintervalos de eventos.\nSi la función \\(f\\) cumple con dichas condiciones, el conjunto de las imágenes \\(f(x)\\) se conocera como Distribución de Probabilidad Continua. Evidentemente, y dada su naturaleza, dichas funciones son del espacio muestral a los reales \\(f:X\\longrightarrow\\Re\\) y se representan gráficamente con curvas sobre el plano cartesiano.\nPuede pensarse que en estadística lo más común es utilizar distribuciones discretas. Sin embargo, muchas veces ocurre que la cantidad de datos es tan grande que resulta más útil trabajar con distribuciones continuas. Además, esto también depende del tipo de datos: si estos se refieren a medidas espaciales o físicas en general, se suelen usar también distribuciones continuas, sin mencionar casos especiales como la Distribución Normal. En resumen, en estadística el tipo de distribución que utilicemos depende más de los propios datos del caso particular y de lo que busquemos hacer.\nNaturalmente, cabe preguntarse: ¿qué pasaría si nuestras probabilidades no dependieran únicamente de una variable, sino más bien de múltiples? La respuesta a esto es bastante simple y la expondré a continuación."
+  },
+  {
+    "objectID": "posts/distribuciones-de-probabilidad.html#distribuciones-de-probabilidad-multivariada.",
+    "href": "posts/distribuciones-de-probabilidad.html#distribuciones-de-probabilidad-multivariada.",
+    "title": "Fundamentos de las Distribuciones de Probabilidad",
+    "section": "Distribuciones de Probabilidad Multivariada.",
+    "text": "Distribuciones de Probabilidad Multivariada.\nAhora, en vez de tener únicamente un espacio muestral \\(X\\), supondremos que existen \\(n\\) espacios muestrales, a los cuales denotaremos como \\(X_1, X_2, ..., X_1\\). En ese caso, la distinción entre distribuciones discretas y continuas se mantendrá, y realmente lo único que cambiará serán las condiciones necesarias que deben satisfacer ambos tipos de distribución.\nPara las distribuciones de probabilidad multivariada la función PDF será una función multivariada del producto cartesiano de los múltiples espacios muestrales al intervalo de \\(0\\) a \\(1\\), es decir, \\(f: X_1\\times X_2\\times ...\\times X_n \\longrightarrow (0,1)\\).\nEn el caso de ser todos los \\(X_k\\) discretos se deberan cumplir las siguientes condiciones:\n\nLa función de densidad debe seguir siendo no negativa:\n\n\\[f(x_1,x_2,...,x_n)\\geq 0;\\]\n\\[\\forall{(x_1,x_2,...,x_n)}\\in{X_1\\times X_2\\times ... \\times X_n}.\\]\n\nLógicamente, la suma de todas las probabilidades debe ser igual a \\(1\\):\n\n\\[\\sum_{X_1}\\sum_{X_2}...\\sum_{X_n} f(x_1,x_2,x_3,...,x_n)=1.\\]\n\nComo mencionamos antes, la probabilidad específica dependera de cada una de los valores de las variables: \\[P(X_1=x_1,X_2=x_2,...,X_n=x_n)=\\] \\[f(x_1,x_2,...,x_n).\\]\n\nY en el caso de las Distribuciones de ser continuas, las condiciones serán las siguentes:\n\nLa función de densidad debe yacer o estar por encima del hiperplano nulo:\n\n\\[f(x_1,x_2,...,x_n)\\geq 0;\\]\n\\[\\forall{(x_1,x_2,...,x_n)}\\in{\\Re^n}.\\]\n\nLa integral múltiple de la función evaluada en todo el espacio muestral es \\(1\\):\n\n\\[\\int_{-\\infty}^{\\infty}...\\int_{-\\infty}^{\\infty}f(x_1,...,x_n)dx_1 ...dx_n.\\]\n\nLa probabilidad solo se obtendra de un subconjunto del producto cartesiano de los espacios muestrales:\n\n\\[P[(x_1,x_2,...,x_n)\\in{A}]=\\] \\[\\idotsint_{A} f(x_1,x_2,...,x_n) dx_1dx_2...dx_n;\\] \\[\\forall{A}\\subset{X_1\\times X_2\\times ... \\times X_n}.\\]\nComo se puede observar, a diferencia de las funciones de densidad de probabilidad univariadas, en vez de trabajar sobre rectas o planos cartesianos, en las distribuciones multivariadas tratamos con subespacios de \\(\\Re^n\\).\nTambién se puede notar que el cálculo de estas funciones de probabilidad utiliza sumatorias o integrales múltiples en cada caso, con lo cual deberemos implementar funciones algo distintas (vectoriales) en vez de las más comunes funciones reales. De nuevo, esto dependerá de las variables presentes en nuestros datos, cómo se relacionan entre ellas y qué información queramos obtener de los mismos.\nPor ahora, trabajaremos solamente con funciones de densidad de probabilidad univariadas, más específicamente con la distribución de probabilidad normal. Esto lo haremos por una serie de razones que trataré en un futuro artículo. Además, en los últimos artículos no he agregado ejemplos porque hasta ahora solo he definido conceptos. Cuando hablemos de la distribución normal, podré agregar más ejemplos para que estos conceptos se entiendan mejor."
+  },
+  {
+    "objectID": "posts/distribuciones-de-probabilidad.html#referencias.",
+    "href": "posts/distribuciones-de-probabilidad.html#referencias.",
+    "title": "Fundamentos de las Distribuciones de Probabilidad",
+    "section": "Referencias.",
+    "text": "Referencias.\n\nDevore, Jay L. Probabilidad y estadística para ingeniería y ciencias. Novena edición, Pearson, 2011."
   },
   {
     "objectID": "posts/otros-conceptos-de-pruebas-de-hipotesis.html",
